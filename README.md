@@ -1,2 +1,3 @@
-# AWS
-Collection of AWS how-tos
+# CI-CD
+Collection of CI-CD how-tos
+Mainly focused on AWS for now...
