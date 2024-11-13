@@ -1,10 +1,15 @@
 # Github actions
 
 To create/edit Github Actions go to the `Actions` tab in you repository:
+
 ![image](images/go-to-github-actions.png)
+
 Create new workflow in the top left of the `Actions` page:
+
 ![image](images/new-github-action.png)
+
 Here you can choose a template, we can go either from scratch use the "Simple workflow" template:
+
 ![image](images/new-github-action-choose-template.png)
 
 Follow platform specific instuctions bellow..
