@@ -65,11 +65,12 @@ on:
 ```
 2. Configure AWS credentials:
 ```yaml
-- name: Configure AWS credentials
-  uses: aws-actions/configure-aws-credentials@v3
-  with:
-    aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-    aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+steps:
+   - name: Configure AWS credentials
+     uses: aws-actions/configure-aws-credentials@v3
+     with:
+       aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+       aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 ```
 Generate new access key in AWS console:
 1. Go to AWS Management Console.
@@ -90,9 +91,10 @@ These will be accessible in any workflow as `${{ secrets.AWS_ACCESS_KEY_ID }}` a
 
 3. Log in to Amazon ECR:
 ```yaml
-- name: Log in to Amazon ECR
-  uses: aws-actions/amazon-ecr-login@v1
-  with:
-    region: ${{ env.AWS_REGION }}
+steps:
+   - name: Log in to Amazon ECR
+     uses: aws-actions/amazon-ecr-login@v1
+     with:
+      region: ${{ env.AWS_REGION }}
 ```
 This will use the AWS credentials from above and log in to Amazon ECR
