@@ -80,7 +80,9 @@ Generate new access key in AWS console:
 Create 2 new secrets: `AWS_ACCESS_KEY_ID` and   `AWS_SECRET_ACCESS_KEY`
 
 Add secrets:
+
 ![image](images/add-repository-secrets.png)
+
 Secrets and variables -> Actions
 These will be accessible in any workflow as `${{ secrets.AWS_ACCESS_KEY_ID }}` and `${{ secrets.AWS_SECRET_ACCESS_KEY }}`
 
